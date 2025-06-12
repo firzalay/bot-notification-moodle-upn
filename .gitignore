@@ -1,0 +1,28 @@
+# Node modules
+node_modules/
+
+# Environment variables (JANGAN PERNAH push file ini ke GitHub)
+.env
+
+# Puppeteer Chromium cache (jika tidak butuh dibackup)
+~/.cache/puppeteer/
+puppeteer_cache/
+
+# Log file jika ada
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Output folder sementara (kalau kamu pakai folder seperti ini)
+dist/
+build/
+tmp/
+temp/
+
+# VSCode settings (kalau kamu pakai VSCode)
+.vscode/
+
+# MacOS & sistem lainnya
+.DS_Store
+Thumbs.db
