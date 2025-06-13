@@ -17,7 +17,7 @@ function getDaysRemaining(deadlineDate) {
 }
 
 function runSchedule() {
-    cron.schedule("0 8 * * *", async () => {
+    cron.schedule("* * * * *", async () => {
         console.log("🔄 Mengecek tugas Moodle...");
         const tugas = await getAssignments(process.env.MOODLE_USERNAME, process.env.MOODLE_PASSWORD);
 
